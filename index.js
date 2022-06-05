@@ -9,12 +9,12 @@ function destructivelyPrependCat(name) {
     cats.unshift(name);
 }
 
-function destructivelyRemoveFirstCat(name) {
-    cats.shift(name);
+function destructivelyRemoveFirstCat() {
+    cats.shift();
 }
 
-function destructivelyRemoveLastCat(name) {
-    cats.pop(name);
+function destructivelyRemoveLastCat() {
+    cats.pop();
 }
 
 function appendCat(name) {
@@ -27,12 +27,12 @@ function prependCat(name) {
     return cats2;
 }
 
-function removeLastCat(name) {
-    const cats2 = cats.slice(0, cats.length-1);
-    return cats2;
+function removeLastCat () {
+    const newCats = cats.slice(0,cats.length -1)
+    return newCats
 }
 
-function removeFirstCat(name) {
-    const cats2 = cats.slice(1);
-    return cats2;
+function removeFirstCat () {
+    const newCats = cats.slice(1)
+    return newCats
 }
